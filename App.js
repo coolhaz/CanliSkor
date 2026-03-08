@@ -26,10 +26,6 @@ const LEAGUES = [
   { id: 4481, name: 'Avrupa Ligi', flag: '🏆' },
 ];
 
-// Lig id -> config eslestirmesi
-const LEAGUE_BY_ID = {};
-LEAGUES.forEach(l => { LEAGUE_BY_ID[l.id] = l; });
-
 // Guvenli fetch - rate limit veya hata durumunda null doner
 async function safeFetch(url) {
   try {
@@ -153,7 +149,6 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState(null);
-
 
   const fetchMatches = useCallback(async () => {
     try {

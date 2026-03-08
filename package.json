@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "canli-skor",
   "version": "1.0.0",
+  "description": "Canli futbol skorlari - Super Lig, Premier Lig, La Liga ve daha fazlasi",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
